@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Trabajos | Diseñador Gráfico</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconos Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black tracking-wider bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
+                DISEÑO<span class="text-indigo-400">.</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <a href="index.html#sobre-mi" class="hover:text-indigo-400 transition-colors">Sobre Mí</a>
+                <a href="index.html#habilidades" class="hover:text-indigo-400 transition-colors">Habilidades</a>
+                <a href="trabajos.html" class="text-indigo-400 font-bold border-b-2 border-indigo-500 pb-1">Mis Trabajos</a>
+                <a href="index.html#servicios" class="hover:text-indigo-400 transition-colors">Servicios</a>
+                <a href="index.html#contacto" class="hover:text-indigo-400 transition-colors">Contacto</a>
+            </nav>
+
+            <a href="index.html#contacto" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 font-semibold text-white hover:shadow-lg hover:shadow-indigo-500/30 transition-all">
+                Contrátame
+            </a>
+        </div>
+    </header>
+
+    <!-- Galería Principal -->
+    <main class="flex-grow pt-32 pb-20 max-w-7xl mx-auto px-6 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h1 class="text-4xl font-extrabold text-white">Galería de Proyectos</h1>
+            <p class="text-gray-400 mt-3">Haz clic en cualquier proyecto para ver la imagen completa en pantalla grande.</p>
+        </div>
+
+        <!-- Cuadrícula amplia y amplia resolución -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Foto 1: foto1.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto1.jpg" alt="Proyecto 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 1</h3>
+                    <p class="text-xs text-indigo-400 mt-1">Diseño Gráfico</p>
+                </div>
+            </div>
+
+            <!-- Foto 2: foto2.jpeg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto2.jpeg" alt="Proyecto 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 2</h3>
+                    <p class="text-xs text-purple-400 mt-1">Fotografía / Eventos</p>
+                </div>
+            </div>
+
+            <!-- Foto 3: foto3.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto3.jpg" alt="Proyecto 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 3</h3>
+                    <p class="text-xs text-pink-400 mt-1">Editorial & Sesión</p>
+                </div>
+            </div>
+
+            <!-- Foto 4: foto4.JPG -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto4.JPG" alt="Proyecto 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 4</h3>
+                    <p class="text-xs text-indigo-400 mt-1">Fotografía de Escenario</p>
+                </div>
+            </div>
+
+            <!-- Foto 5: foto5.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto5.jpg" alt="Proyecto 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 5</h3>
+                    <p class="text-xs text-purple-400 mt-1">Fotografía / Eventos</p>
+                </div>
+            </div>
+
+            <!-- Foto 6: foto6.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto6.jpg" alt="Proyecto 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 6</h3>
+                    <p class="text-xs text-pink-400 mt-1">Póster & Arte</p>
+                </div>
+            </div>
+
+            <!-- Foto 7: foto7.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto7.jpg" alt="Proyecto 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 7</h3>
+                    <p class="text-xs text-indigo-400 mt-1">Fotografía / Eventos</p>
+                </div>
+            </div>
+
+            <!-- Foto 8: foto8.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto8.jpg" alt="Proyecto 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 8</h3>
+                    <p class="text-xs text-purple-400 mt-1">Editorial & Sesión</p>
+                </div>
+            </div>
+
+            <!-- Foto 9: foto9.png -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto9.png" alt="Proyecto 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 9</h3>
+                    <p class="text-xs text-pink-400 mt-1">Ilustración Vectorial</p>
+                </div>
+            </div>
+
+            <!-- Foto 10: foto10.jpg -->
+            <div class="work-card group cursor-pointer bg-gray-800/90 rounded-2xl overflow-hidden border border-gray-700/80 hover:border-indigo-500 transition-all hover:-translate-y-1 shadow-lg md:col-span-2 lg:col-span-1">
+                <div class="w-full aspect-[4/3] bg-gray-950 overflow-hidden relative">
+                    <img src="foto10.jpg" alt="Proyecto 10" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-indigo-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="px-4 py-2 bg-indigo-600/90 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="ph ph-magnifying-glass-plus text-lg"></i> Ampliar
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-lg text-white">Proyecto 10</h3>
+                    <p class="text-xs text-indigo-400 mt-1">Póster & Arte</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- VISOR MODAL EN PANTALLA COMPLETA AL HACER CLIC -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-black/90 hidden backdrop-blur-md flex items-center justify-center p-4">
+        <button id="closeModal" class="absolute top-6 right-6 text-white text-4xl hover:text-indigo-400 transition-colors z-10">
+            <i class="ph ph-x"></i>
+        </button>
+        <img id="modalImg" src="" alt="Imagen ampliada" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl object-contain">
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-gray-500 text-sm">&copy; 2026 Valeria Caballero</p>
+            <div class="flex space-x-6 text-gray-400 text-xl">
+                <a href="#" class="hover:text-indigo-400"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="hover:text-indigo-400"><i class="ph ph-behance-logo"></i></a>
+                <a href="#" class="hover:text-indigo-400"><i class="ph ph-dribbble-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
